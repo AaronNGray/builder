@@ -14,23 +14,23 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 
 ## directory structure
 
-<home>
-    **modules**
-        <name>
-            <vesion>
+    <home>
+        **modules**
+            <name>
+                <vesion>
 
-    **projects**
-        <solution-root>
-            <projects-name>
-                include
-                src
-                build
-                    debug
-                    release
-            modules
-                <name>
-                    <version>
-                        ...
+        **projects**
+            <solution-root>
+                <projects-name>
+                    include
+                    src
+                    build
+                        debug
+                        release
+                modules
+                    <name>
+                        <version>
+                            ...
 
 
 ## git interop
