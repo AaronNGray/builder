@@ -133,8 +133,8 @@ or just
     b init <project name> <blank-git-repo>
     cd <project name>
 
-### http(s) support
-### ftp support
+#### http(s) support
+#### ftp support
 
 ### implementation ###
 
