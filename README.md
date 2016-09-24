@@ -109,15 +109,17 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
 ## rules
 
-    <rule name="...">
-        <destinations>
-            <destination name="..." path="...">
-        </destinations>
-        <sources>
-            <source name="..." path="...">
-        </source>
-        <command|commands>
-    </rule>
+    <rules name="...">
+        <rule name="...">
+            <destinations>
+                <destination name="..." path="...">
+            </destinations>
+            <sources>
+                <source name="..." path="...">
+            </source>
+            <command|commands>
+        </rule>
+    </rules>
 
 ## import - for libraries
 ## export
