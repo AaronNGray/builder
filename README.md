@@ -34,8 +34,8 @@ git interop should be implicit
 ## file format
 Files are either in a XML or a scoped format [files maybe either XML or YAML or probably just YAML with XML conversion. ]
 
-variables
-    environment variables
+## variables
+### environment variables
 
         <environment>
             <variable>
@@ -44,14 +44,14 @@ variables
                 optional default
                 optional value
 
-    defines & defaults
+### defines & defaults
 
         <define>
             <variable>
                 name
                 optional value
 
-types
+### types
     bool
     string
     number
