@@ -119,10 +119,10 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
 ## solution and projects
 
-    <solution name="...">
-        <project name="...">
-            <group name="...">
-            <source name="..." path="...">
+    <solution name="..." tool-chain="...">
+        <project name="..." tool-chain="...">
+            <group name="..." tool-chain="...">
+            <source name="..." path="..." tool-chain="..." tool="...">
 
 ## rules
 
