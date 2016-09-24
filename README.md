@@ -177,8 +177,10 @@ https://fdik.org/yml/
 Ideally builder will have
  - command line tool
  - GUI IDE with optional background/foreground building
- - dedicated builder app with progress bars for overall progress, folding progress bars for individual build process
- - disk space indicator bar
+ - dedicated builder app with :-
+     - progress bars for overall progress
+     - folding progress bars for individual build process
+     - disk space indicator bar, optional hiding
  - background server application with HTTP REST API
 
 ## license
