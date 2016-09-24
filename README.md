@@ -64,7 +64,7 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
  -  string
  -  number
  -  enumeration
- -  struct ? do we really need this ?
+ -  struct
 
     <types>
         <type>
