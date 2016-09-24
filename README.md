@@ -119,8 +119,10 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
 ## solution and projects
 
-    <solution>
-        <project>
+    <solution name="...">
+        <project name="...">
+            <group name="...">
+            <source name="..." path="...">
 
 ## rules
 
@@ -171,6 +173,13 @@ or just
 ### initial prototype
 https://fdik.org/yml/
 
+### tools
+Ideally builder will have
+ - command line tool
+ - GUI IDE with optional background/foreground building
+ - dedicated builder app with progress bars for overall progress, folding progress bars for individual build process
+ - disk space indicator bar
+ - background server application with HTTP REST API
 
 ## license
 The MIT License (MIT) 
