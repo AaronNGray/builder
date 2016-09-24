@@ -51,7 +51,7 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
                 name
                 optional value
 
-### types
+## types
  -  bool
  -  string
  -  number
@@ -71,40 +71,56 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
             <struct name="...">
 
+## tools
+
 <tool>
     parameters
     input(s)
     output(s)
     command line
 
+    <tool name="...">
         <command>...</command>
+    </tool>
 
+    <tool name="...">
         <commands>
+            <command>...</command>
             <command>...</command>
             ...
         </commands>
-
-<tool-chain>
-
-    <tool name="...">
-        ...
     </tool>
 
-    <tool name="...">
-        ...
-    </tool>
+## tool chain
 
-</tool-chain>
+    <tool-chain name="...">
+        <tool name="...">
+            ...
+        </tool>
+        <tool name="...">
+            ...
+        </tool>
+    </tool-chain>
 
-
-solution and projects
+## solution and projects
 
     <solution>
         <project>
 
+## rules
 
-import - for libraries
-export
+    <rule name="...">
+        <destinations>
+            <destination name="..." path="...">
+        </destinations>
+        <sources>
+            <source name="..." path="...">
+        </source>
+        <command|commands>
+    </rule>
+
+## import - for libraries
+## export
 
     <export>
         <includes>
@@ -134,5 +150,14 @@ or just
 #### http(s) support
 #### ftp support
 
-### implementation ###
+## implementation
 
+## license
+The MIT License (MIT) 
+Copyright (c) 2016 Aaron N Gray
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
