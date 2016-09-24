@@ -55,6 +55,9 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
             <variable>
                 name
                 optional value
+            <scope>
+                name
+                <variable>
 
 ## types
  -  bool
