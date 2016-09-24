@@ -44,7 +44,8 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
     <environment>
         <variable name="...">
-            optional selection value|mapping
+            optional value
+            optional mapping
             optional default
 
 ### defines & defaults
