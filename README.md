@@ -1,6 +1,8 @@
 # builder
 Software Builder
 
+rough outline specification
+
 ## builder
 
 **builder** should have node npm like functionality as well as Visual Studio like solution / project structure.
