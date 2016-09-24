@@ -42,22 +42,17 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 ## variables
 ### environment variables
 
-        <environment>
-            <variable>
-                name
-                optional mapping
-                optional default
-                optional value
+    <environment>
+        <variable name="...">
+            optional selection value|mapping
+            optional default
 
 ### defines & defaults
 
-        <define>
+    <define>
+        <variable name="..." [value]="..." default="...">
+        <scope name="...">
             <variable>
-                name
-                optional value
-            <scope>
-                name
-                <variable>
 
 ## types
  -  bool
