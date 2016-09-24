@@ -6,15 +6,18 @@ Software Builder
 **builder** should have node npm like functionality as well as Visual Studio like solution / project structure.
 dependant modules maybe all stored in one flattened two tier (project and vesion) heirachy in the users root directory instead of npm like spawl.
 
+## investigation
+ - MSBuild import/reference
+ - npm import/reference
+
 ## directory structure
 
-
-home
-    modules
+<home>
+    **modules**
         <name>
             <vesion>
 
-    projects
+    **projects**
         <solution-root>
             <projects-name>
                 include
