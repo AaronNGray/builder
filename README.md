@@ -72,12 +72,13 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
             <string>
             <number>
             <enum>
+            <struct>
 
-                <enum name="..." type="..." default="...">
-                    <value name="..." value="..."/>
-                </enum>
+    <enum name="..." type="..." default="...">
+        <value name="..." value="..."/>
+    </enum>
 
-            <struct name="...">
+    <struct name="...">
 
 ## tools
 
