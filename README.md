@@ -36,6 +36,10 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 ## git interop
 git interop should be implicit
 
+    b clone <git-project>
+    b init
+
+
 ## file format
 Files are either in a XML or a scoped format [files maybe either XML or YAML or probably just YAML with XML conversion. ]
 
