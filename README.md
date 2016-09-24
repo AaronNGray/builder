@@ -9,6 +9,8 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 ## investigation
  - MSBuild import/reference
  - npm import/reference
+ - visual studio export
+ - make & nmake file export
 
 ## directory structure
 
