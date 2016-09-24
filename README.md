@@ -66,6 +66,8 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
  -  enumeration
  -  struct
 
+### type specification
+
     <types>
         <type>
             <bool name="..." default="...">
@@ -73,6 +75,8 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
             <number>
             <enum>
             <struct>
+
+### types
 
     <enum name="..." type="..." default="...">
         <value name="..." value="..."/>
