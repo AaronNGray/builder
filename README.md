@@ -7,9 +7,9 @@ Software Builder
 dependant modules maybe all stored in one flattened two tier (project and vesion) heirachy in the users root directory instead of npm like spawl.
 
 ## investigation
- - MSBuild import/reference
+ - MSBuild import/reference with mappings
  - npm import/reference
- - visual studio export
+ - visual studio import/export with mappings
  - make & nmake file export
 
 ## directory structure
