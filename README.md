@@ -47,8 +47,14 @@ git interop should be implicit
     b clone <git-project>
     b init
 
-## variables
-### environment variables
+## platforms
+This should allow the definition of a platform.
+
+### file type and file extensions
+platform independent and platform specific file extention to file type mapping should be able to be defined and attached to tools to allow implicit behaviour for different platforms and tools.
+
+### variables
+#### environment variables
 A global set of environmental variable maybe specified and inherit and map the calling processes environment variables.
 ```
 <environment>
@@ -155,20 +161,19 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  - package
  - builder
  
-## platforms
-This should allow the definition of a platform.
-
 ## solution and projects
 ```
-<solution name="..." tool-chain="...">
-    <project name="..." tool-chain="...">
-        <group name="..." tool-chain="...">
-        <source name="..." path="..." tool-chain="..." tool="...">
+<solution name="..." [tool-chain="..."]>
+    <project name="..." [tool-chain="..."]>
+        <group name="..." [tool-chain="..."]>
+        <source name="..." path="..." [tool-chain="..."] [tool="..."]>
 ```
+implicit tool selection from file extension
+
 ## rules
 ```
-<rules name="...">
-    <rule name="...">
+<rules name="..." [tool-chain="..."]>
+    <rule name="..." [tool-chain="..."]>
         <dependencies>
             <dependency name="..." />
         </dependencies>                
