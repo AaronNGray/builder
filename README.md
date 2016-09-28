@@ -149,8 +149,11 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  
  - compile
  - link
+ - lib
  
+ - package
  - builder
+ 
 
 ## solution and projects
 ```
@@ -187,8 +190,9 @@ Need work out how to allow a standard packaging model to be created that allows 
  - .msi
  - RPM
  - .deb
+ - GNU AUTOCONF/AUTOMAKE packaging model
  - ...
-
+ 
 ## package
 ## module
 ## unit
