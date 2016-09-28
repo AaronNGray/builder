@@ -6,7 +6,6 @@ rough outline specification
 ## builder
 
 **builder** should have node npm like functionality as well as Visual Studio like solution / project structure.
-dependant modules maybe all stored in one flattened two tier (project and vesion) heirachy in the users root directory instead of npm like spawl.
 
 ## investigation
  - MSBuild import/reference with mappings
@@ -17,6 +16,7 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
  - make & nmake file export
 
 ## directory structure
+dependant modules maybe all stored in one flattened two tier (project and vesion) heirachy in the users root directory instead of npm like spawl. Or they maybe via mappings to external directory structures, that maybe found constants, 'which' relative, OS directory structure based or via environmental variables.
 
 ```
 <home-directory>
