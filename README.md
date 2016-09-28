@@ -88,17 +88,31 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
 ## tools
 
-<tool>
-    parameters
-    input(s)
-    output(s)
-    command line
+A set of standard generic tools can be defined as an abstract tool chain. This can be mapped on to individual platofom tool chains.
+
+mapping of options as enums, and augmeneted enums (think ADT's) to command line switches.
+
+ - parameters
+ - input(s)
+ - output(s)
+ - command line
 
     <tool name="...">
-        <command>...</command>
-    </tool>
+        <parameters>
+            <parameter />
+        </parameters>
+        <parameter>
 
-    <tool name="...">
+        <inputs>
+            <input>
+        </inputs>
+        <input>
+
+        <outputs>
+            <output>
+        <outputs>
+        <output>
+
         <commands>
             <command>...</command>
             <command>...</command>
@@ -116,6 +130,22 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
             ...
         </tool>
     </tool-chain>
+    
+## tools
+
+ - copy
+ - move
+ - rename
+ - delete
+ 
+ - mkdir
+ - cd|chdir
+ - rmdir
+ 
+ - compile
+ - link
+ 
+ - builder
 
 ## solution and projects
 
@@ -128,11 +158,16 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
     <rules name="...">
         <rule name="...">
+            <dependencies>
+                <dependency name="..." />
+            </dependencies>                
             <destinations>
-                <destination name="..." path="...">
+                <destination name="..." path="..." />
+                ...
             </destinations>
             <sources>
-                <source name="..." path="...">
+                <source name="..." path="..." />
+                ...
             </source>
             <command|commands>
         </rule>
