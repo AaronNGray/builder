@@ -16,7 +16,7 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 
 ## directory structure
 
-    <home>
+    <home-directory>
         **modules**
             <name>
                 <vesion>
@@ -47,20 +47,21 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 
 ## variables
 ### environment variables
-
+A global set of environmental variable maybe specified and inherit and map the calling processes environment variables.
+```
     <environment>
         <variable name="...">
             optional value
             optional mapping
             optional default
-
+```
 ### defines & defaults
-
+```
     <define>
         <variable name="..." [value]="..." default="...">
         <scope name="...">
             <variable>
-
+```
 ## types
  -  bool
  -  string
@@ -69,7 +70,7 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
  -  struct
 
 ### type specification
-
+```
     <types>
         <type>
             <bool name="..." default="...">
@@ -77,15 +78,15 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
             <number>
             <enum>
             <struct>
-
+```
 ### types
-
+```
     <enum name="..." type="..." default="...">
         <value name="..." value="..."/>
     </enum>
 
     <struct name="...">
-
+```
 ## tools
 
 A set of standard generic tools can be defined as an abstract tool chain. This can be mapped on to individual platofom tool chains.
@@ -97,6 +98,7 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  - output(s)
  - command line
 
+```
     <tool name="...">
         <parameters>
             <parameter />
@@ -119,10 +121,11 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
             ...
         </commands>
     </tool>
-
+```
 ## tool chain
 
-    <tool-chain name="...">
+```
+   <tool-chain name="...">
         <tool name="...">
             ...
         </tool>
@@ -130,7 +133,8 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
             ...
         </tool>
     </tool-chain>
-    
+```
+
 ## tools
 
  - copy
@@ -148,14 +152,14 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  - builder
 
 ## solution and projects
-
+```
     <solution name="..." tool-chain="...">
         <project name="..." tool-chain="...">
             <group name="..." tool-chain="...">
             <source name="..." path="..." tool-chain="..." tool="...">
-
+```
 ## rules
-
+```
     <rules name="...">
         <rule name="...">
             <dependencies>
@@ -172,20 +176,20 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
             <command|commands>
         </rule>
     </rules>
-
+```
 ## package
 ## module
 ## unit
 
 ## import - for libraries
 ## export
-
+```
     <export>
         <includes>
         <libraries>
             <debug>
             <release>
-
+```
 
 ### bulider command line
 
