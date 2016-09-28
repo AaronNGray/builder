@@ -180,6 +180,12 @@ This should allow the definition of a platform.
             <source name="..." path="..." />
             ...
         </source>
+        
+        <tool>
+        <tools>
+            <tool>
+        </tools>
+
         <command|commands>
     </rule>
 </rules>
