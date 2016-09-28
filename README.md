@@ -178,6 +178,17 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
     </rule>
 </rules>
 ```
+
+# Standard packaging model
+Need work out how to allow a standard packaging model to be created that allows creation of packages for various packaging systems like
+ - .zip
+ - .tar.gz
+ - .jar
+ - .msi
+ - RPM
+ - .deb
+ - ...
+
 ## package
 ## module
 ## unit
