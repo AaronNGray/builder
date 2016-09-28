@@ -16,24 +16,25 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 
 ## directory structure
 
-    <home-directory>
-        **modules**
-            <name>
-                <vesion>
+```
+<home-directory>
+    **modules**
+        <name>
+            <vesion>
 
-        **projects**
-            <solution-root>
-                <projects-name>
-                    include
-                    src
-                    build
-                        debug
-                        release
-                modules
-                    <name>
-                        <version>
-                            ...
-
+    **projects**
+        <solution-root>
+            <projects-name>
+                include
+                src
+                build
+                    debug
+                    release
+            modules
+                <name>
+                    <version>
+                        ...
+```
 
 ## git interop
 git interop should be implicit
@@ -49,18 +50,18 @@ Files are either in a XML or a scoped format [files maybe either XML or YAML or 
 ### environment variables
 A global set of environmental variable maybe specified and inherit and map the calling processes environment variables.
 ```
-    <environment>
-        <variable name="...">
-            optional value
-            optional mapping
-            optional default
+<environment>
+    <variable name="...">
+        optional value
+        optional mapping
+        optional default
 ```
 ### defines & defaults
 ```
-    <define>
-        <variable name="..." [value]="..." default="...">
-        <scope name="...">
-            <variable>
+<define>
+    <variable name="..." [value]="..." default="...">
+    <scope name="...">
+        <variable>
 ```
 ## types
  -  bool
@@ -71,25 +72,25 @@ A global set of environmental variable maybe specified and inherit and map the c
 
 ### type specification
 ```
-    <types>
-        <type>
-            <bool name="..." default="...">
-            <string>
-            <number>
-            <enum>
-            <struct>
+<types>
+    <type>
+        <bool name="..." default="...">
+        <string>
+        <number>
+        <enum>
+        <struct>
 ```
 ### types
 ```
-    <enum name="..." type="..." default="...">
-        <value name="..." value="..."/>
-    </enum>
+<enum name="..." type="..." default="...">
+    <value name="..." value="..."/>
+</enum>
 
-    <struct name="...">
+<struct name="...">
 ```
 ## tools
 
-A set of standard generic tools can be defined as an abstract tool chain. This can be mapped on to individual platofom tool chains.
+A set of standard generic tools can be defined as an abstract tool chain. This can be mapped on to individual platform tool chains.
 
 mapping of options as enums, and augmeneted enums (think ADT's) to command line switches.
 
@@ -99,40 +100,40 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  - command line
 
 ```
-    <tool name="...">
-        <parameters>
-            <parameter />
-        </parameters>
-        <parameter>
+<tool name="...">
+    <parameters>
+        <parameter />
+    </parameters>
+    <parameter>
 
-        <inputs>
-            <input>
-        </inputs>
+    <inputs>
         <input>
+    </inputs>
+    <input>
 
-        <outputs>
-            <output>
-        <outputs>
+    <outputs>
         <output>
+    <outputs>
+    <output>
 
-        <commands>
-            <command>...</command>
-            <command>...</command>
-            ...
-        </commands>
-    </tool>
+    <commands>
+        <command>...</command>
+        <command>...</command>
+        ...
+    </commands>
+</tool>
 ```
 ## tool chain
 
 ```
-   <tool-chain name="...">
-        <tool name="...">
-            ...
-        </tool>
-        <tool name="...">
-            ...
-        </tool>
-    </tool-chain>
+<tool-chain name="...">
+     <tool name="...">
+         ...
+     </tool>
+     <tool name="...">
+         ...
+     </tool>
+ </tool-chain>
 ```
 
 ## tools
@@ -153,29 +154,29 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
 
 ## solution and projects
 ```
-    <solution name="..." tool-chain="...">
-        <project name="..." tool-chain="...">
-            <group name="..." tool-chain="...">
-            <source name="..." path="..." tool-chain="..." tool="...">
+<solution name="..." tool-chain="...">
+    <project name="..." tool-chain="...">
+        <group name="..." tool-chain="...">
+        <source name="..." path="..." tool-chain="..." tool="...">
 ```
 ## rules
 ```
-    <rules name="...">
-        <rule name="...">
-            <dependencies>
-                <dependency name="..." />
-            </dependencies>                
-            <destinations>
-                <destination name="..." path="..." />
-                ...
-            </destinations>
-            <sources>
-                <source name="..." path="..." />
-                ...
-            </source>
-            <command|commands>
-        </rule>
-    </rules>
+<rules name="...">
+    <rule name="...">
+        <dependencies>
+            <dependency name="..." />
+        </dependencies>                
+        <destinations>
+            <destination name="..." path="..." />
+            ...
+        </destinations>
+        <sources>
+            <source name="..." path="..." />
+            ...
+        </source>
+        <command|commands>
+    </rule>
+</rules>
 ```
 ## package
 ## module
@@ -184,11 +185,11 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
 ## import - for libraries
 ## export
 ```
-    <export>
-        <includes>
-        <libraries>
-            <debug>
-            <release>
+<export>
+    <includes>
+    <libraries>
+        <debug>
+        <release>
 ```
 
 ### bulider command line
