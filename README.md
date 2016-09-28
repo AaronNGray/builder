@@ -31,6 +31,8 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
                 src
                 build
                     debug
+                    development
+                    test
                     release
             modules
                 <name>
