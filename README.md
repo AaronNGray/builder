@@ -51,7 +51,7 @@ git interop should be implicit
 This should allow the definition of a platform.
 
 ### file type and file extensions
-platform independent and platform specific file extention to file type mapping should be able to be defined and attached to tools to allow implicit behaviour for different platforms and tools.
+platform independent and platform specific file extention to file type mapping should be able to be defined and attached to tools to allow implicit behaviour for different platforms and tools. These should also be able to be attached to MIME types.
 
 ### variables
 #### environment variables
