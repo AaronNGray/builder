@@ -20,6 +20,7 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 
 ```
 <home-directory>
+    .builder
     **modules**
         <name>
             <vesion>
@@ -46,6 +47,12 @@ git interop should be implicit
 
     b clone <git-project>
     b init
+```
+<home-directory>
+    .builder
+    .git
+    ...
+```
 
 ## platforms
 This should allow the definition of a platform.
@@ -96,7 +103,7 @@ A global set of environmental variable maybe specified and inherit and map the c
 <struct name="...">
 ```
 
-### templates
+## templates
 
 All constructs should be able to parameterizable in order to reduce repetitoin and allow larger possible implementaion domains.
 
