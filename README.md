@@ -47,10 +47,6 @@ git interop should be implicit
     b clone <git-project>
     b init
 
-
-## file format
-Files are either in a XML or a scoped format [files maybe either XML or YAML or probably just YAML with XML conversion. ]
-
 ## variables
 ### environment variables
 A global set of environmental variable maybe specified and inherit and map the calling processes environment variables.
@@ -189,7 +185,10 @@ This should allow the definition of a platform.
 </rules>
 ```
 
-# Standard packaging model
+# file formats
+Standard package description files are either in a XML or a scoped textual format.
+
+## Standard packaging model
 Need work out how to allow a standard packaging model to be created that allows creation of packages for various packaging systems like
  - .zip
  - .tar.gz
@@ -200,9 +199,9 @@ Need work out how to allow a standard packaging model to be created that allows 
  - GNU AUTOCONF/AUTOMAKE packaging model
  - ...
  
-## package
-## module
-## unit
+### package
+### module
+### unit
 
 ## import - for libraries
 ## export
@@ -237,7 +236,16 @@ or just
 
 ## implementation
 ### initial prototype
+files maybe either XML or YML or probably just YML with XML conversion.
+#### XML
+XSLT maybe used to do a prototype implementation of a subset of target platform tools and tool chains.
+stanard make files should be a very easy initial target.
+
+#### YML
 https://fdik.org/yml/
+The whole system may be able to be prototyped with either YSLT.
+
+#### Dedicated builder programs.
 
 ### tools
 Ideally builder will have
