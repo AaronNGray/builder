@@ -131,7 +131,7 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
 ## tool chain
 
 ```
-<tool-chain name="...">
+<tool-chain name="..." platform="...">
      <tool name="...">
          ...
      </tool>
@@ -159,6 +159,8 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  - package
  - builder
  
+## platforms
+This should allow the definition of a platform.
 
 ## solution and projects
 ```
