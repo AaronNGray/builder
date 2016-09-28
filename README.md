@@ -12,6 +12,8 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
  - MSBuild import/reference with mappings
  - npm import/reference
  - visual studio import/export with mappings
+ - XCode projects
+ - GNU AUTOCONF/AUTOMAKE projects
  - make & nmake file export
 
 ## directory structure
