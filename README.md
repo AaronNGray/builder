@@ -30,10 +30,11 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
                 include
                 src
                 build
-                    debug
-                    development
-                    test
-                    release
+                    <platform>
+                        debug
+                        development
+                        test
+                        release
             modules
                 <name>
                     <version>
