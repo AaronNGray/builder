@@ -95,6 +95,29 @@ A global set of environmental variable maybe specified and inherit and map the c
 
 <struct name="...">
 ```
+
+### templates
+
+All constructs should be able to parameterizable in order to reduce repetitoin and allow larger possible implementaion domains.
+
+```
+<template name="...">
+    <parameter name="..." type="..."/>
+    <body>
+        ...
+    </body>
+</template>
+```
+instatiation of a template
+
+```
+<instatiate-template name="..." ...parameters...>
+    <parameter name="..." value="..."/>
+    ...
+</instatiate-template>    
+
+```
+
 ## tools
 
 A set of standard generic tools can be defined as an abstract tool chain. This can be mapped on to individual platform tool chains.
