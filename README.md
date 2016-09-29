@@ -19,7 +19,7 @@ rough outline specification
 dependant modules maybe all stored in one flattened two tier (project and vesion) heirachy in the users root directory instead of npm like spawl. Or they maybe via mappings to external directory structures, that maybe found constants, 'which' relative, OS directory structure based or via environmental variables.
 
 ```
-<home-directory>
+<working-directory>
     .builder
     **modules**
         <name>
@@ -36,11 +36,19 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
                         development
                         test
                         release
-            modules
+            .modules
                 <name>
                     <version>
                         ...
 ```
+Normalized set of packaged modules, either in user home directory or system root directory.
+```
+<home-or-root-directory>
+    .modules
+        <name>
+            <version>
+                ...
+```    
 
 ## git interop
 git interop should be implicit
