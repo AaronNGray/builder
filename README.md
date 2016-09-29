@@ -62,6 +62,7 @@ git interop should be implicit
 
     b clone <git-project>
     b init
+    
 ```
 <home-directory>
     .builder
@@ -203,8 +204,9 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
  - link
  - lib
  
- - package
- - builder
+ - p|packager
+ - b|builder
+ - c|commander
  
 ## solution and projects
 ```
@@ -319,6 +321,8 @@ or just
 
     b init <project name>
     cd <project name>
+
+
 
 #### git support
 
