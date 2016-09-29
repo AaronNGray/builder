@@ -3,6 +3,8 @@ Software Builder
 
 rough outline specification
 
+lift modules to package level ?
+
 ## builder
 
 **builder** should have node npm like functionality as well as Visual Studio like solution / project structure.
@@ -21,13 +23,17 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 ```
 <working-directory>
     .builder
-    **modules**
+    .signatures
+    **.modules**
         <name>
-            <vesion>
+            <version>
+                ...
 
     **projects**
         <solution-root>
             <projects-name>
+                .builder
+                .signatures
                 include
                 src
                 build
@@ -44,6 +50,7 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 Normalized set of packaged modules, either in user home directory or system root directory.
 ```
 <home-or-root-directory>
+    .signatures
     .modules
         <name>
             <version>
@@ -253,7 +260,7 @@ Need work out how to allow a standard packaging model to be created that allows 
 ### module
 ### unit
 
-## import - for libraries
+## imports
 import of modules from 
  - .git
  - .zip
@@ -295,6 +302,10 @@ deployment to :-
   - http: - undesirable but okay if the source has a validated signature that is in trusted signature list.
   - https:
   - git:
+
+## versioning system
+
+## signature system
 
 ### bulider command line
 
