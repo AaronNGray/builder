@@ -85,7 +85,10 @@ A global set of environmental variable maybe specified and inherit and map the c
         optional value
         optional mapping
         optional default
+    <variable name="PATH">
+        ...mappings - domain restriction...
 ```
+
 ### defines & defaults
 ```
 <define>
@@ -322,7 +325,14 @@ or just
     b init <project name>
     cd <project name>
 
+#### install
 
+    b install
+    b clean
+    b <command>
+
+## commands
+commands invoke tools
 
 #### git support
 
