@@ -238,7 +238,8 @@ implicit tool selection from file extension
 Standard package description files are either in a XML or a scoped textual format.
 
 ## Standard packaging model
-Need work out how to allow a standard packaging model to be created that allows creation of packages for various packaging systems like
+Need work out how to allow a standard packaging model to be created that allows creation of packages for various packaging systems like. This is done with plugin backends.
+
  - .zip
  - .tar.gz
  - .jar
@@ -253,6 +254,34 @@ Need work out how to allow a standard packaging model to be created that allows 
 ### unit
 
 ## import - for libraries
+import of modules from 
+ - .git
+ - .zip
+ - .tar.gz
+ - .jar
+ - .msi
+ - RPM
+ - .deb
+ - GNU AUTOCONF/AUTOMAKE packaging model
+ - ...
+ 
+from
+  - module:
+  - http: - undesirable but okay if the source has a validated signature that is in trusted signature list.
+  - https:
+  - git:
+
+```
+<imports>
+    <module name="..." version="..." path="..." />
+    ...
+    <platform name="...">
+        <module name="..." version="..." path="..." />
+    </platform>
+    ...
+</imports>
+```
+
 ## export
 ```
 <export>
@@ -261,6 +290,11 @@ Need work out how to allow a standard packaging model to be created that allows 
         <debug>
         <release>
 ```
+deployment to :-
+  - module:
+  - http: - undesirable but okay if the source has a validated signature that is in trusted signature list.
+  - https:
+  - git:
 
 ### bulider command line
 
