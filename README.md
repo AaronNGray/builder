@@ -24,12 +24,12 @@ dependant modules maybe all stored in one flattened two tier (project and vesion
 <working-directory>
     .builder
     .signatures
-    **.modules**
+    modules
         <name>
             <version>
                 ...
 
-    **projects**
+    projects
         <solution-root>
             <projects-name>
                 .builder
