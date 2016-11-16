@@ -282,8 +282,7 @@ from
   - git:
 
 ```
-<imports>
-    <module name="..." version="..." path="..." />
+<imports>    <module name="..." version="..." path="..." />
     ...
     <platform name="...">
         <module name="..." version="..." path="..." />
@@ -298,7 +297,7 @@ from
     <includes>
     <libraries>
         <debug>
-        <release>
+S        <release>
 ```
 deployment to :-
   - module:
@@ -309,10 +308,10 @@ deployment to :-
 ## versioning system
 
 ## signature system
+DSA Based signatures maybe specified for both versioned source modules and genrated distribution packages with tie backs from distribution package to source package content and signature.
+## bulider command line
 
-### bulider command line
-
-#### new project
+### new project
 
     mkdir <project name>
     cd <project name>
@@ -323,7 +322,7 @@ or just
     b init <project name>
     cd <project name>
 
-#### install
+### install
 #
     b install
     b clean
