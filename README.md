@@ -257,7 +257,8 @@ Need work out how to allow a standard packaging model to be created that allows 
  - .msi
  - RPM - .deb
  - GNU AUTOCONF/AUTOMAKE packaging model
- - ...
+
+- ...
  
 ### package
 ### module
@@ -297,7 +298,7 @@ from
     <includes>
     <libraries>
         <debug>
-S        <release>
+        <release>
 ```
 deployment to :-
   - module:
@@ -308,7 +309,7 @@ deployment to :-
 ## versioning system
 
 ## signature system
-DSA Based signatures maybe specified for both versioned source modules and genrated distribution packages with tie backs from distribution package to source package content and signature.
+DSA Based signatures maybe specified for both versioned source modules and genrated distribution packages with tie backs from distribution package to source package content and signature. 
 ## bulider command line
 
 ### new project
