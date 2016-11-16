@@ -240,7 +240,6 @@ implicit tool selection from file extension
         <tools>
             <tool>
         </tools>
-
         <command|commands>
     </rule>
 </rules>
@@ -266,7 +265,7 @@ Need work out how to allow a standard packaging model to be created that allows 
 
 ## imports
 import of modules from 
-a - .git
+ - .git
  - .zip
  - .tar.gz
  - .jar
@@ -276,7 +275,7 @@ a - .git
  - GNU AUTOCONF/AUTOMAKE packaging model
  - ...
  
-tfrom
+from
   - module:
   - http: - undesirable but okay if the source has a validated signature that is in trusted signature list.
   - https:
@@ -286,7 +285,7 @@ tfrom
 <imports>
     <module name="..." version="..." path="..." />
     ...
-f    <platform name="...">
+    <platform name="...">
         <module name="..." version="..." path="..." />
     </platform>
     ...
@@ -296,7 +295,7 @@ f    <platform name="...">
 ## export
 ```
 <export>
-o    <includes>
+    <includes>
     <libraries>
         <debug>
         <release>
@@ -306,7 +305,7 @@ deployment to :-
   - http: - undesirable but okay if the source has a validated signature that is in trusted signature list.
   - https:
   - git:
-s
+
 ## versioning system
 
 ## signature system
