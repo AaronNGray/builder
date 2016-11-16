@@ -309,7 +309,8 @@ deployment to :-
 ## versioning system
 
 ## signature system
-DSA Based signatures maybe specified for both versioned source modules and genrated distribution packages with tie backs from distribution package to source package content and signature. 
+DSA Based signatures maybe specified for both versioned source modules and genrated distribution packages with tie backs from distribution package to source package content and signature.
+Parallel **tieback** signatures in source and distribution packages to previous versions; this maybe multiple versions. 
 ## bulider command line
 
 ### new project
