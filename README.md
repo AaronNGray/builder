@@ -143,6 +143,9 @@ instatiation of a template
 </instatiate-template>    
 
 ```
+## skelatons
+
+Skelaton code generation for new projects and default file templates for new files.
 
 ## tools
 
