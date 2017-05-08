@@ -145,7 +145,7 @@ instatiation of a template
 ```
 ## skelatons
 
-Skelaton code generation for new projects and default file templates for new files.
+Skelaton code generation for new projects and default file templates for new files and groups of files for new features.
 
 ## tools
 
