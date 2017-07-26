@@ -172,7 +172,7 @@ mapping of options as enums, and augmeneted enums (think ADT's) to command line 
 
     <outputs>
         <output>
-    <outputs>
+    </outputs>
     <output>
 
     <commands>
