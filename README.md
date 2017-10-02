@@ -361,6 +361,16 @@ files maybe either XML or YML or probably just YML with XML conversion.
 XSLT maybe used to do a prototype implementation of a subset of target platform tools and tool chains.
 stanard make files should be a very easy initial target.
 
+##### meta:xslt and metaxsltproc
+
+    metaxsltproc <*.xslt file> <doc> <params>
+
+    <meta:xslt xslt=... doc=... output=...>     Calls xslt recursively
+
+    <meta:exec command=... param=...>           Execute a program
+    <meta:spawn command=... param=...>          Spawn a program                  
+
+
 #### YML
 https://fdik.org/yml/
 The whole system may be able to be prototyped with either YSLT.
