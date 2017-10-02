@@ -9,6 +9,11 @@ lift modules to package level ?
 
 **builder** should have node npm like functionality as well as Visual Studio like solution / project structure.
 
+1) look for **build.builder**, generate **build.xml** if it is older.
+2) look for **build.xml**
+3) look for **.builder/build.builder**, generate **.builder/build.xml** if it is older
+4) then **.builder/build.xml**
+
 ## investigation
  - MSBuild import/reference with mappings
  - npm import/reference
