@@ -334,8 +334,9 @@ or just
     cd <project name>
 
 ### install
-#
+
     b install
+    b uninstall
     b clean
 
 ## commands
