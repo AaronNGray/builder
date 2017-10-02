@@ -65,11 +65,11 @@ Normalized set of packaged modules, either in user home directory or system root
 ## git interop
 git interop should be implicit
 
-    b clone <git-project>
+    b clone <git-project> [<project-directory>]
     b init
     
 ```
-<home-directory>
+<project-directory>
     .builder
     .git
     ...
