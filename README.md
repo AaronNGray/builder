@@ -336,11 +336,16 @@ or just
 #
     b install
     b clean
-    b <command>
 
 ## commands
 commands invoke tools
 
+    b <command> ...
+    
+## scripts
+
+    b run <script> ...
+    
 #### git support
 
     b init <project name> <blank-git-repo>
