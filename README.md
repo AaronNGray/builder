@@ -361,7 +361,7 @@ commands invoke tools
 files maybe either XML or YML or probably just YML with XML conversion.
 #### XML
 XSLT maybe used to do a prototype implementation of a subset of target platform tools and tool chains.
-stanard make files should be a very easy initial target.
+standard make files should be a very easy initial target.
 
 ##### meta:xslt and metaxsltproc
 
@@ -369,8 +369,11 @@ stanard make files should be a very easy initial target.
 
     <meta:xslt xslt=... doc=... output=...>     Calls xslt recursively
 
-    <meta:exec command=... param=...>           Execute a program
-    <meta:spawn command=... param=...>          Spawn a program                  
+    <meta:exec command=...>           Execute a program
+        <param value=...>
+        ...
+    </meta:exec>    
+    <meta:spawn command=...>          Spawn a program                  
 
 
 #### YML
