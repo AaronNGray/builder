@@ -365,16 +365,18 @@ standard make files should be a very easy initial target.
 
 ##### meta:xslt and metaxsltproc
 
-    metaxsltproc <*.xslt file> <doc> <params>
+    metaxsltproc <*.xsl file> <doc> <params>
 
-    <meta:xslt xslt=... doc=... output=...>     Calls xslt recursively
+    <meta:xslt xsl=... doc=... output=...>     Calls xslt recursively
 
     <meta:exec command=...>           Execute a program
-        <param value=...>
+        <with-param value=...>
         ...
-    </meta:exec>    
-    <meta:spawn command=...>          Spawn a program                  
-
+    </meta:exec>
+    
+    <meta:spawn>          Spawn a program                  
+        <command>...</command>
+    </meta:spawn>
 
 #### YML
 https://fdik.org/yml/
