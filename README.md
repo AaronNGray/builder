@@ -3,8 +3,6 @@ Software Builder
 
 outline specification
 
-lift modules to package level ?
-
 ## builder
 
 **builder** should have node npm like functionality as well as Visual Studio like solution / project structure.
@@ -393,6 +391,10 @@ Ideally builder will have
      - folding progress bars for individual build process
      - disk space indicator bar, optional hiding
  - background server application with HTTP REST API
+
+## todo
+
+lift modules to package level ?
 
 ## Copyright
 Copyright Aaron N Gray 2016
