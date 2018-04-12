@@ -1,7 +1,5 @@
 # builder
-Software Builder
-
-outline specification
+Software Builder Outline Specification
 
 ## builder
 
@@ -394,7 +392,15 @@ Ideally builder will have
 
 ## todo
 
-lift modules to package level ?
+### specification
+ - lift modules to package level ?
+ - XSD Schema Specifications
+
+### reference implementation
+
+ - libxslt - xsltproc XSLT 1.1 implementation packaging
+ - XSLT prototypes
+
 
 ## Copyright
 Copyright Aaron N Gray 2016
